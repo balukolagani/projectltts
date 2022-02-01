@@ -22,11 +22,11 @@ pipeline {
                       cd $BUILD_NUMBER 
                       cmake ..
                       make
-                      git clone https://github.com/Krishnateja5056/ltts_artifact.git
+                      git clone https://github.com/balukolagani/ltts_artifact.git
                       git init
                       git add -A
                       git commit -m "$BUILD_NUMBER"
-                      git remote add origin https://Krishnateja5056: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@github.com/Krishnateja5056/ltts_artifact.git
+                      git remote add origin https://balukolagani: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@github.com/balukolagani/ltts_artifact.git
                       git push -f origin master
                       '''
             }
